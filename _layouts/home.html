@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <header>
+        <div id="index">
+            <p>JIANG BLOG</p>
+            <p>生活中只有一种英雄主义，那就是看清之后依然热爱它</p>
+            <ul id="index_nav">
+            <li><a href="#categories"><span class="glyphicon glyphicon-home"></span> 文章</a></li>
+            <li><a href="workers.html"><span class="glyphicon glyphicon-send"></span> 小作品</a></li>
+            <li><a href="Online_resume.html"><span class="glyphicon glyphicon-user"></span> 简历</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="main" class="container">
+      {{ content }}
+    </div>
+     <!--回到顶部-->
+    <div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部">
+        <a href="javascript:;">
+            <div class="arrow"></div>
+            <div class="stick"></div>
+        </a>
+    </div>
+</body>
+</html>
