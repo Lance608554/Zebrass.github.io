@@ -13,7 +13,7 @@
             <ul class="nav navbar-nav ">
                 {% for p in site.pages %}
                 {% if p.title %}
-                    <a href="{{ p.url | prepend: site.baseurl }}"><span class="glyphicon {{ p.icon }}"></span> {{ p.title }}</a></li>
+                   <li> <a href="{{ p.url | prepend: site.baseurl }}"><span class="glyphicon {{ p.icon }}"></span>  {{ p.title }}</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>

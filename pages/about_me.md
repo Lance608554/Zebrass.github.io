@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: 关于我
 icon: glyphicon-user
 ---
