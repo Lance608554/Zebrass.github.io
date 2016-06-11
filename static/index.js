@@ -50,9 +50,7 @@ function generateContent() {
     if (typeof $('#markdown-toc').html() === 'undefined') {
         $("#article_summary").hide().parent().removeClass('col-sm-3');
         $('#my_article').parent().removeClass('col-sm-9').addClass('col-sm-12');
-        alert("meiou");
     } else {
         $('.content').html('<ul>' + $('#markdown-toc').html() + '</ul>');
-        alert(tianjiale);
     }
 }
