@@ -52,5 +52,6 @@ function generateContent() {
         $('#my_article').parent().removeClass('col-sm-9').addClass('col-sm-12');
     } else {
         $('.content').html('<ul>' + $('#markdown-toc').html() + '</ul>');
+        $('#markdown-toc').hide();
     }
 }
