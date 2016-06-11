@@ -91,14 +91,24 @@ header>div p:first-child {
 
 /* article area*/
 #article_summary {
-    padding: 3em 5em;
+    padding: 2em 5em;
+    border-right: 1px solid gray;
+}
+
+#article_summary .summary {
+    font-size: 1.2em
+    padding-bottom:1em;
+}
+
+#my_article {
+    padding-right: 2em;
 }
 
 /* move to top */
 #top {
     position: fixed;
     right: 25px;
-    bottom: 10px;
+    bottom: 30px;
     width: 60px;
     height: 60px;
     background-color: #bbb;
@@ -123,4 +133,17 @@ header>div p:first-child {
     width: 13px;
     border-bottom: 13px solid #bbb;
     background-color: #7f7f7f;
+}
+
+/* footer */
+footer div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url("http://Zebrass.github.io/static/pics/µ×²¿Í¼Æ¬.png") ;
+    background-repeat: repeat-x;
+}
+
+footer div span {
+    padding: 2px auto;
 }
