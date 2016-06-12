@@ -64,8 +64,7 @@ function generateContent() {
 function setDocumentHeight(){
     var documentHeight = parseInt(document.body.clientHeight); //求取网页高度（包含了页面的不可见高度）
     var offsetTop = 1200-documentHeight;
-    alert(offsetTop);
     if(documentHeight < 1200) {
-        $("footer .footer").css("paddingTop",offsetTop);
+        $("footer").css("paddingTop",offsetTop);
     }
 }

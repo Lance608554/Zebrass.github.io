@@ -144,5 +144,6 @@ footer .footer {
 }
 
 footer .footer span {
+    display: block;
     padding: 2px auto;
 }
