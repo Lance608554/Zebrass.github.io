@@ -136,12 +136,10 @@
 
 /* footer */
 footer{
-    min-height: 50px;
-    margin-top: 80px;
+    min-height: 50px;;
     padding: 1em;
-    background: #3f4850;
-    color: #aaa;
     text-align: center;
+    background: url("../static/picture/footer.png") repeat-x;
     -webkit-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
     -o-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
