@@ -7,6 +7,7 @@ $(document).ready(function() {
     generateContent();
     backToTop();
     setDocumentHeight();
+    $("img").addClass("img-responsive");
 });
 
 /*
@@ -64,6 +65,6 @@ function setDocumentHeight(){
     var documentHeight = parseInt(document.body.clientHeight); //求取网页高度（包含了页面的不可见高度）
     var offsetTop = 1200-documentHeight;
     if(documentHeight < 1200) {
-        $("footer div").css("paddingTop",offset);
+        $("footer div").css("paddingTop",offsetTop);
     }
 }

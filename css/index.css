@@ -1,13 +1,13 @@
 
 /* index header */
-header>div {
+#home {
     position: relative;
     width: 100%;
     height: 500px;
     background: url("../static/picture/onload.png") no-repeat;
 }
 
-header>div p {
+#home p {
     font-size: 2em;
     color: rgba(255,255,255,0.7);
     position: absolute;
@@ -15,7 +15,7 @@ header>div p {
     top: 35%;
 }
 
-header>div p:first-child {
+#home p:first-child {
     font-size: 5em;
     left:35%;
     top:15%;
@@ -140,7 +140,7 @@ footer div {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: url("http://Zebrass.github.io/static/pics/µ×²¿Í¼Æ¬.png") ;
+    background-image: url("http://Zebrass.github.io/static/pics/footer.png") ;
     background-repeat: repeat-x;
 }
 
