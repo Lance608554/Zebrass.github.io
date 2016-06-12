@@ -92,11 +92,10 @@
 /* article area*/
 #article_summary {
     padding-left: 2em;
-}
-
-#article_summary .summary {
-    font-size: 1.2em
-    padding-bottom:1em;
+    background-color: rgba(150,150,150,0.7);
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
 }
 
 #my_article {
@@ -112,6 +111,8 @@
     height: 60px;
     background-color: #bbb;
     border-radius:7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
     opacity: 0.8;
     display: none;
     z-index: 888;
@@ -140,8 +141,4 @@ footer{
     padding: 1em;
     text-align: center;
     background: url("../static/picture/footer.png") repeat-x;
-    -webkit-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
-    -o-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 }
