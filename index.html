@@ -4,26 +4,34 @@ layout: home
     <div class="row">
         <div class="col-sm-3">
             <div id="categories" class="hidden-xs">
-                <img src="static/picture/author.jpg" class="img-thumbnail" alt="作者"/>
+                <img src="static/picture/author.png" class="img-thumbnail" alt="作者"/>
                 <p><small>Stay foolish,stay hungry</small></p>
                 <div class="categories-header">
                     <span class="glyphicon glyphicon-list"></span>  分类列表
                 </div>
-                <a href='index.html#post' class="categories-item" cate="All">
-                    All<span class="my-badge">{{site.posts | size}}</span>
-                </a>
-                {% for category in site.categories order:ascending %}
-                <a href="javascript:;" class="categories-item" cate="{{ category | first }}">
-                    {{ category | first }} <span class="my-badge">{{ category | last | size }}</span>
-                </a>
-                {% endfor %}
+                <div class="categories-body">
+                    <ul>
+                        <li>
+                            <a href='index.html#post' class="categories-item" data-cate="All">
+                                All<span class="my-badge">{{site.posts | size}}</span>
+                            </a>
+                        </li>
+                        {% for category in site.categories order:ascending %}
+                        <li>
+                            <a href="javascript:;" class="categories-item" data-cate="{{ category | first }}">
+                                {{ category | first }} <span class="my-badge">{{ category | last | size }}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="col-sm-9">
             <div id="post">
                 <div class="post-header">文章列表</div>
                 <div class="post-body">
-                    <div class="all-posts" post-cate="All">
+                    <div class="all-posts" data-post-cate="All">
                         <!--所有文章-->
                         {% for post in paginator.posts %}
                         <a class="post-item" href="{{ post.url}}">
@@ -36,7 +44,7 @@ layout: home
                             {% if paginator.total_pages > 1 %}
                             <!-- 分页代码 -->
                             {% if paginator.previous_page %}
-                            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+                            <a href="{{ paginator.previous_page_path | prepend: site.baseurl}}">上一页</a>
                             {% endif %}
 
                             {% for page in (1..paginator.total_pages) %}
@@ -58,7 +66,7 @@ layout: home
 
                     <!-- 分类文章 -->
                     {% for category in site.categories %}
-                    <div post-cate="{{category | first}}">
+                    <div data-post-cate="{{category | first}}">
                         {% for posts in category  %}
                         {% for post in posts %}
                         {% if post.url %}

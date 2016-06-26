@@ -1,5 +1,6 @@
 
-/* index header */
+/* index.html */
+/* header */
 #home {
     position: relative;
     width: 100%;
@@ -70,16 +71,16 @@
     color: #fff;
     background-color: #999;
     padding: 0 7px 1px 7px;
+    float: right;
     border-radius: 9px;
     -moz-border-radius: 9px;
     -webkit-border-radius: 9px;
-    float: right;
 }
 
 /* post area */
 #post .post-header{
     padding: 15px 30px;
-    border-bottom: 1px solid #c0c0c0;
+    border-bottom: 2px solid #c0c0c0;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -88,52 +89,25 @@
     padding:8px 30px 10px 30px;
     border-bottom:1px solid #aaa;
 }
+#post .post-item a {
+    font-size: 1.5em;
+}
+#post .post-item a:hover {
+    text-decoration: none;
+}
 
 /* article area*/
 #article_summary {
     padding-right: 1em;
-    background-color: rgba(150,150,150,0.7);
+    background-color: rgba(200,200,200,0.9);
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
-
 #my_article {
     padding-right: 2em;
 }
 
-/* move to top */
-#top {
-    position: fixed;
-    right: 25px;
-    bottom: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #bbb;
-    border-radius:7px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    opacity: 0.8;
-    display: none;
-    z-index: 888;
-}
-#top .arrow{
-    margin:0 auto;
-    padding-top:11px;
-    width:0;
-    height: 0;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 15px solid #7f7f7f;
-
-}
-#top .stick{
-    margin:0 auto;
-    padding-bottom:21px;
-    width: 13px;
-    border-bottom: 13px solid #bbb;
-    background-color: #7f7f7f;
-}
 
 /* footer */
 footer{
@@ -218,3 +192,36 @@ footer{
 #fall a:visited {color: #715584}	/* 已访问的链接 */
 #fall a:hover {color: #5989AD;text-decoration: none;}	/* 鼠标移动到链接上 */
 #fall a:active {color: #91C3CF}	/* 选定的链接 */
+
+/* move to top */
+#top {
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #bbb;
+    border-radius:7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    opacity: 0.8;
+    display: none;
+    z-index: 888;
+}
+#top .arrow{
+    margin:0 auto;
+    padding-top:11px;
+    width:0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #7f7f7f;
+
+}
+#top .stick{
+    margin:0 auto;
+    padding-bottom:21px;
+    width: 13px;
+    border-bottom: 13px solid #bbb;
+    background-color: #7f7f7f;
+}

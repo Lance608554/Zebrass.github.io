@@ -2,12 +2,12 @@
  * 页面ready方法
  */
 $(document).ready(function() {
-    $('[data-toggle="tooltip"]').tooltip(); //激活tooltip
     categoryDisplay();
     generateContent();
     backToTop();
     setDocumentHeight();
     $("img").addClass("img-responsive");
+    $('[data-toggle="tooltip"]').tooltip(); //激活tooltip
 });
 
 /*
