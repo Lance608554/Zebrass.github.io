@@ -60,7 +60,7 @@
 }
 
 #categories .categories-item{
-    display: block;
+    width: auto;
     font-size: 1.2em;
     color: rgba(40,40,40,0.8);
     padding:8px 18px;

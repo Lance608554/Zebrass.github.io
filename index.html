@@ -11,16 +11,18 @@ layout: home
                 </div>
                 <div class="categories-body">
                     <ul>
-                        <li>
-                            <a href='index.html#post' class="categories-item" cate="All">
-                                All<span class="my-badge">{{site.posts | size}}</span>
+                        <li class="categories-item">
+                            <a href='index.html#post'  cate="All">
+                                All
                             </a>
+                            <span class="my-badge">{{site.posts | size}}</span>
                         </li>
                         {% for category in site.categories order:ascending %}
-                        <li>
-                            <a href="javascript:;" class="categories-item" cate="{{ category | first }}">
-                                {{ category | first }} <span class="my-badge">{{ category | last | size }}</span>
+                        <li class="categories-item">
+                            <a href="javascript:;"  cate="{{ category | first }}">
+                                {{ category | first }}
                             </a>
+                            <span class="my-badge">{{ category | last | size }}</span>
                         </li>
                         {% endfor %}
                     </ul>

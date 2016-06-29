@@ -7,10 +7,11 @@ icon: glyphicon-user
 
 > 作为2017届自动化专业毕业生，因为喜欢而自学了前端知识，希望能成为一名前端开发工程师。 **[我的在线简历](http://Zebrass.github.io/pages/Online_resume.html)**
 
+<div class="container">
 <div class="row">
     <div class="col-sm-3">
         <img src="../static/picture/myself.jpg" />
-    <div/>
+    </div>
     <div class="col-sm-9>
         <p>
              中南大学17届本科毕业生，自动化专业。<br/>
@@ -22,6 +23,8 @@ icon: glyphicon-user
         </p>
     </div>
 </div>
+</div>
+<br/>
 
 ---
 
