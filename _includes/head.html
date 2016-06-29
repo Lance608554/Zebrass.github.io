@@ -1,11 +1,10 @@
-<head>
+<head style="display: block">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
     <meta name="description" content="Free Web tutorials on HTML and CSS">
     <meta name="author" content="Hege Refsnes">
     <title>蒋肇锦的博客</title>
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- 从百度静态资源库引入文件 -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -14,8 +13,8 @@
     <script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <!--样式表-->
-    <link rel="stylesheet" type="text/css" href="{{ "/css/index.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ "css/index.css" | prepend: site.baseurl }}">
     <!--javascript代码-->
-    <script type="text/javascript" src="{{"/static/index.js" | prepend: site.baseurl}}"></script>
+    <script type="text/javascript" src="{{"static/index.js" | prepend: site.baseurl}}"></script>
     <link rel="shortcut icon"  href="http://Zebrass.github.io/favicon.ico" type="image/x-icon" />
 </head>
