@@ -55,6 +55,10 @@
     font-weight: bold;
 }
 
+#categories .categories-body ul {
+    list-style: none;
+}
+
 #categories .categories-item{
     display: block;
     font-size: 1.2em;
@@ -89,17 +93,16 @@
     padding:8px 30px 10px 30px;
     border-bottom:1px solid #aaa;
 }
-#post .post-item a {
-    font-size: 1.5em;
-}
+
 #post .post-item a:hover {
     text-decoration: none;
 }
 
 /* article area*/
 #article_summary {
-    padding-right: 1em;
-    background-color: rgba(200,200,200,0.9);
+    padding: 10px;
+    margin-right: 1em;
+    background-color: rgba(240,240,240,0.9);
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
