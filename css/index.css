@@ -57,18 +57,17 @@
 
 #categories .categories-body ul {
     list-style: none;
+    padding: 0;
 }
 
 #categories .categories-item{
-    width: auto;
+    width: 100%;
     font-size: 1.2em;
     color: rgba(40,40,40,0.8);
     padding:8px 18px;
     border-bottom:1px solid gray;
 }
-#categories .categories-item:last-of-type{
-    border-bottom:none;
-}
+
 #categories .categories-item .my-badge{
     font-size: 12px;
     font-weight: bold;
