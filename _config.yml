@@ -6,6 +6,7 @@ description: 蒋肇锦的博客
 github_username: Zebrass
 permalink: /:year/:month/:day/:title/
 baseurl: https://zebrass.github.io
+github: https://github.com/Zebrass
 
 # Build settings
 markdown: kramdown
