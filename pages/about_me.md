@@ -12,18 +12,23 @@ icon: glyphicon-user
     <div class="col-sm-3">
         <img src="https://zebrass.github.io/static/picture/myself.jpg" alt="作者" />
     </div>
+
     <div class="col-sm-9>
+
         <p>
-             中南大学17届本科毕业生，自动化专业。<br/>
-             玩过单片机，DIY过电子小玩意，本想在嵌入式方面做些努力，因缘巧合学了点前端，觉得有趣，遂入坑。<br/>
+             中南大学17届本科毕业生，自动化专业。
+             玩过单片机，DIY过电子小玩意，本想在嵌入式方面做些努力，因缘巧合学了点前端，觉得有趣，遂入坑。
              出生于福建风景秀丽的小村落，性格适中。喜欢有趣的人和事，喜欢听歌、运动，热爱篮球，NBA球迷，喜欢的球星是 Kobe Bryant、Russell Westbrook。
              崇拜作家、诗人，觉得他们是独特的群体，精神财产的创造者，大一大二因此“浪费”了好些时间读杂书。阅读过程也屡屡困惑求知的意义，
-             而后交付给自己的说法是：人生性是热爱自由的，而无知本身便是一种令人不适的束缚感。探询的路一旦开始，哪舍得浪费世间这一遭。<br/><br/>
-
+             而后交付给自己的说法是：人生性是热爱自由的，而无知本身便是一种令人不适的束缚感。探询的路一旦开始，哪舍得浪费世间这一遭。
         </p>
+        
     </div>
+
  </div>
+
 </div>
+
 <br/>
 
 ---
@@ -43,8 +48,7 @@ icon: glyphicon-user
 主要采用了bootstrap+jquery两个框架。在写这个博客的过程中熟悉了jekyll的基本原理，并掌握了基本的Git语法。
 
 ---
-![ruby-gems]({{ "https://zebrass.github.io/static/picture/myself.jpg" }})
-中南大学17届本科毕业生，自动化专业。<br/>
+![ruby-gems]({{ "https://zebrass.github.io/static/picture/myself.jpg" }})中南大学17届本科毕业生，自动化专业。<br/>
 玩过单片机，DIY过电子小玩意，本想在嵌入式方面做些努力，因缘巧合学了点前端，觉得有趣，遂入坑。<br/>
 出生于福建风景秀丽的小村落，性格适中。喜欢有趣的人和事，喜欢听歌、运动，热爱篮球，NBA球迷，喜欢的球星是 Kobe Bryant、Russell Westbrook。
                                                                                        崇拜作家、诗人，觉得他们是独特的群体，精神财产的创造者，大一大二因此“浪费”了好些时间读杂书。阅读过程也屡屡困惑求知的意义，
