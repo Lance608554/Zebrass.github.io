@@ -5,7 +5,7 @@ email: 1223870172@qq.com
 description: 蒋肇锦的博客
 github_username: Zebrass
 permalink: /:year/:month/:day/:title/
-baseurl: http://zebrass.github.io/
+baseurl: http://zebrass.github.io
 
 # Build settings
 markdown: kramdown
