@@ -195,6 +195,14 @@ footer{
 #fall a:hover {color: #5989AD;text-decoration: none;}	/* 鼠标移动到链接上 */
 #fall a:active {color: #91C3CF}	/* 选定的链接 */
 
+/* about_me */
+@media (min-width: @screen-sm-min) {
+    .introduction {
+        padding-right: 200px;
+    }
+}
+
+
 /* move to top */
 #top {
     position: fixed;
