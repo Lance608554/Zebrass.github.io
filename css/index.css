@@ -15,13 +15,13 @@
     left: 27%;
     top: 30%;
 }
-@media (max-width: @screen-xs-max) {
+@media (max-width:991px) {
     #home {
         height: 250px;
-        background-size: 100% 250px;
+        background-size: auto 250px;
     }
     #home p {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
 #index_nav {
@@ -46,7 +46,14 @@
     font-size: 1.5em;
     color: white;
 }
-
+@media (max-width:991px){
+    #index_nav li {
+        padding:0.5em;
+    }
+    #index_nav li a {
+        font-size: 1em;
+    }
+}
 /* categories */
 #categories {
     padding: 2em 4em 0 5em;
@@ -198,7 +205,6 @@ footer{
 #fall a:visited {color: #715584}	/* 已访问的链接 */
 #fall a:hover {color: #5989AD;text-decoration: none;}	/* 鼠标移动到链接上 */
 #fall a:active {color: #91C3CF}	/* 选定的链接 */
-
 
 
 /* move to top */
