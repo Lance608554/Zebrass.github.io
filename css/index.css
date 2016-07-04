@@ -5,28 +5,32 @@
     position: relative;
     width: 100%;
     height: 500px;
-    background: url("../static/picture/onload.png") no-repeat;
+    background: url("http://o9r9kpwmc.bkt.clouddn.com/blog/onload.png") no-repeat;
 }
 
 #home p {
-    font-size: 2em;
+    font-size: 4.5em;
     color: rgba(255,255,255,0.7);
     position: absolute;
-    left: 25%;
-    top: 35%;
+    left: 27%;
+    top: 30%;
 }
-
-#home p:first-child {
-    font-size: 5em;
-    left:35%;
-    top:15%;
+@media (max-width: @screen-xs-max) {
+    #home {
+        height: 250px;
+        background-size: 100% 250px;
+    }
+    #home p {
+        font-size: 3em;
+    }
 }
-
 #index_nav {
     list-style-type: none;
     position: absolute;
-    left: 33%;
-    top: 45%;
+    width: 100%;
+    text-align: center;
+    padding: 0 auto 0 auto;
+    top: 50%;
 }
 #index_nav li {
     display: inline-block;
@@ -195,12 +199,6 @@ footer{
 #fall a:hover {color: #5989AD;text-decoration: none;}	/* 鼠标移动到链接上 */
 #fall a:active {color: #91C3CF}	/* 选定的链接 */
 
-/* about_me */
-@media (min-width: @screen-sm-min) {
-    .introduction {
-        padding-right: 200px;
-    }
-}
 
 
 /* move to top */
