@@ -12,7 +12,7 @@
     font-size: 4em;
     color: rgba(255,255,255,0.7);
     position: absolute;
-    left: 25%;
+    left: 25.6%;
     top: 25%;
 }
 @media (max-width:991px) {
@@ -21,7 +21,8 @@
         background-size: auto 250px;
     }
     #home p {
-        font-size: 1.5em;
+        font-size: 2em;
+        left: 23%;
     }
 }
 #index_nav {
