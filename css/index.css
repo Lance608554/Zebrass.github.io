@@ -9,11 +9,11 @@
 }
 
 #home p {
-    font-size: 4.5em;
+    font-size: 4em;
     color: rgba(255,255,255,0.7);
     position: absolute;
-    left: 27%;
-    top: 30%;
+    left: 24%;
+    top: 25%;
 }
 @media (max-width:991px) {
     #home {
@@ -29,7 +29,6 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    padding: 0 auto 0 auto;
     top: 50%;
 }
 #index_nav li {
