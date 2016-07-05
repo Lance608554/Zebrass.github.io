@@ -10,9 +10,11 @@ categories: jekyll
 
 ## 选择jekyll的原因
 
+---
+
 1. github提供了免费的空间可用于搭建博客，而且内置了jekyll解析器
 2. jekyll并不复杂，可以阅读中文文档或者博客模板来掌握它
-3. 传送门：[jekyll中文官网网站](http://jekyllcn.com/) || [jekyll博客模板](http://jekyllthemes.org/)
+3. 传送门：[jekyll中文官网网站](http://jekyllcn.com/)  \|  [jekyll博客模板](http://jekyllthemes.org/)
 
 >  当时找了很多模板，都不是很满意（逼格太高啦····简洁成白纸了卧槽····老外写的好抽象orz····），所以如果有能力当然自己写一个最好啦！
 >  嗯····所以如果你中意我····做的的博客话，欢迎来fork。仓库再此：[蒋肇锦的博客](https://github.com/Zebrass/Zebrass.github.io)
@@ -20,6 +22,8 @@ categories: jekyll
 ---
 
 ## 使用jekyll搭建博客
+
+---
 
 ### 你需要做的准备
 
@@ -38,11 +42,11 @@ fork你找到的博客模板，下载到本地，用编辑器完成修改。
 ### 创建仓库
 
 在github上创建远程仓库，仓库名为：**你的github名称.github.io**
-![Create localFile]({{"../static/picture/jekyll_02.png"}})
+![Create localFile]({{"/static/picture/jekyll_02.png"}})
 在本地创建一个文件夹命名为：**你的github名称.github.io**
-![Create Repository]({{"../static/picture/jekyll_03.png"}})
+![Create Repository]({{"/static/picture/jekyll_03.png"}})
 将修改好的文件复制到刚刚创建的文件夹,文件结构文档里说的挺清楚了，我的文档结构：
-![jekyllFiles]({{"../static/picture/jekyll_01.png"}})
+![jekyllFiles]({{"/static/picture/jekyll_01.png"}})
 
 ### 推送到github
 
@@ -78,6 +82,8 @@ fork你找到的博客模板，下载到本地，用编辑器完成修改。
 
 ## 辅助工具
 
+---
+
 
 ### 写博客
 
@@ -99,8 +105,12 @@ fork你找到的博客模板，下载到本地，用编辑器完成修改。
 
 ## 注意事项
 
+---
+
 *  前端发展速度太快，许多好教程到现在容易变成坑，建议多找些时间较近的教程看。
-*  jekyll中的css是用sass写的，也可以直接用css写没问题的。[sass英文文档](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) | [sass中文入门](http://www.w3cplus.com/sassguide/)
+*  jekyll中的css是用sass写的，也可以直接用css写没问题的。[sass英文文档](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)  \|   [sass中文入门](http://www.w3cplus.com/sassguide/)
 *  博客默认是没有评论系统的，本文的评论系统使用了多说，详细安装办法可访问[多说官网](http://duoshuo.com/)。
+
+---
 
 **第一篇博文，没啥干货=.= 算是对自己建立博客过程的一个记录或者留念吧，谨作为一条道路的开始······**
