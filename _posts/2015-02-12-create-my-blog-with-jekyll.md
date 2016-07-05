@@ -8,154 +8,92 @@ categories: jekyll
 * content
 {:toc}
 
+## 选择jekyll的原因
 
-## 序
+1.github提供了免费的空间可用于搭建博客，而且内置了jekyll解析器
+2.jekyll并不复杂，可以阅读中文文档或者博客模板来掌握它
+3.传送门：[jekyll中文官网网站](http://jekyllcn.com/) || [jekyll博客模板]（http://jekyllthemes.org/）
+> 当时找了很多模板，都不是很满意（逼格太高啦····简洁成白纸了卧槽····老外写的好抽象orz····），所以如果有能力当然自己写一个最好啦！
+> 嗯····所以如果你中意我····做的的博客话，欢迎来fork。仓库再此：[别说话····](https://github.com/Zebrass/Zebrass.github.io)
+---
 
-
+## 使用jekyll搭建博客
 
 ---
 
-## 搭建过程
+#### 你需要做的准备
 
-在jekyll的官网上 [http://jekyllrb.com/](http://jekyllrb.com/) 其实已经说得比较明白了，我在这里还是简单的说一下吧。我用的是Windows系统。    
-主要环节有：安装Ruby，安装RubyGems，安装jekyll，安装代码高亮插件，安装node.js
+（自行谷歌或者某度哦）
+1. 创建你的github账号
+2. 了解Git的基本原理，参考教程：[点我](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6)
+3. 安装Git
+4. 编辑器推荐sublime或者webstorn
+5. 寻找一个jekyll博客模板：上面有主题网站
 
----
 
-### 安装Ruby
+#### 制定博客
 
-ruby官网下载安装：[https://www.ruby-lang.org/en/downloads/](https://www.ruby-lang.org/en/downloads/)
+fork你找到的博客模板，下载到本地，用编辑器完成修改。
 
-安装完成后配置环境变量
 
-在命令提示符中，得到ruby版本号，如下图，即安装成功
-![ruby-v]({{ "/css/pics/ruby-v.png"}})
+#### 创建仓库
 
----
+在github上创建远程仓库，仓库名为：你的github名称.github.io
+![Create localFile](../static/picture/jekyll_02.png)
+在本地创建一个文件夹命名为：你的github名称.github.io
+![Create Repository](../static/picture/jekyll_03.png)
+将修改好的文件复制到刚刚创建的文件夹,文件结构文档里说的挺清楚了，我的文档结构：
+![jekyllFiles]("../static/picture/jekyll_01.png")
 
-### 安装RubyGems
 
-官网下载 [http://rubygems.org/pages/download](http://rubygems.org/pages/download) rubygems-2.4.5.zip   
+#### 推送到github
 
-cd到RubyGems目录   
+打开Git Bash，假设我的本地文件夹是 D：你的github名称.github.io 则输入代码如下
 
-![ruby-gems]({{ "/css/pics/ruby-gems.png"}})    
+        <---进入blog文件夹--->
+        cd D：你的github名称.github.io
+        <---初始化仓库--->
+        git init
+        <---添加全部文件到暂存区--->
+        git add .
+        <---提交改动到本地仓库--->
+        git commit -m "first"
+        <---将远程仓库在本地添加一个引用：origin--->
+        git remote add origin https://github.com/你的github名称/你的github名称.github.io.git
+        <---推送到远程仓库--->
+        git push origin master
 
-执行安装   
-
-![ruby-gems-setup]({{"/css/pics/ruby-gems-setup.png"}})   
-
----
-
-### 用RubyGems安装Jekyll
-
-执行下面的语句安装   
-
-![jekyll-setup]({{"/css/pics/jekyll-setup.png"}})   
-
-安装结束画面   
-
-![jekyll-setup-finish]({{"/css/pics/jekyll-setup-finish.png"}})   
-
-至此jekyll就已经安装完毕了，后续就是个性化的自己设定了。   
-
----
-
-### 创建博客
-
-在d盘新建一个工作区jekyllWorkspace
-
-cd到jekyllWorkspace   
-
-执行jekyll new name创建新的工作区   
-
-![jekyllWorkSpace]({{"/css/pics/jekyllWorkSpace.png"}})   
-
-文件结构如下：   
-
-![jekyllFiles]({{"/css/pics/jekyllFiles.png"}})
-
-cd到博客文件夹，开启服务器   
-
-![serve]({{"/css/pics/serve.png"}})   
-
-watch为了检测文件夹内的变化，即修改后不需要重新启动jekyll
-
-我的环境下启动报错(你的可能没有)，再安装yajl-ruby和rouge  
-
-![yajl]({{"/css/pics/yajl.png"}})
-
-再次启动服务器成功
-
-![serve-sucess]({{"/css/pics/serve-sucess.png"}})
-
-访问 http://localhost:4000/   
-
-![browser]({{"/css/pics/browser.png"}})   
-
-详细文章页面   
-
-![browser2]({{"/css/pics/browser2.png"}})  
+等待小许，显示推送完成后一般都可以立即访问的：https://你的github名称.github.io
 
 ---
 
-##后续 
-
-*  整个安装过程参考了jekyll官网，注意jekyll还有一个简体中文官网，不过比较坑（我就被坑了），有些内容没有翻译过来，有可能会走弯路，建议如果想看中文的相关资料，也要中英对照着阅读。[jekyll中文网 http://jekyllcn.com](http://jekyllcn.com), [jekyll英文网 http://jekyllrb.com](http://jekyllrb.com)
-*  jekyll中的css是用sass写的，当然直接在`_sass/_layout.scss`中添加css也是可以的。
-*  本文是用Markdown格式来写的，相关语法可参考： [Markdown 语法说明 (简体中文版) http://wowubuntu.com/markdown/](http://wowubuntu.com/markdown/)  
-*  按照本文的说明搭建完博客后，用`github Pages`托管就可以看到了。注意，在github上面好像不支持rouge，所以要push到github上时，我将配置文件_config.yml中的代码高亮改变为`highlighter: pygments`就可以了
-*  博客默认是没有评论系统的，本文的评论系统使用了多说，详细安装办法可访问[多说官网 http://duoshuo.com/](http://duoshuo.com/)，当然也可以使用[搜狐畅言 http://changyan.sohu.com/](http://changyan.sohu.com/)作为评论系统。	
-*  也可以绑定自己的域名，如果没有域名，可以在[godaddy http://www.godaddy.com/](http://www.godaddy.com/)上将域名放入购物车等待降价，买之。
-*  祝各位新年快乐！
+## 辅助工具
 
 ---
 
-## 可能出现的问题
+#### 写博客
 
-### `hitimes/hitimes (LoadError)`
-
-**错误代码：**
-
-<pre><code class="markdown">C:/Ruby22/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require': cannot load such file -- hitimes/hitimes (LoadError)</code></pre>
-
-**解决方法：**
-
-在stackoverflow上又一个很好的解决方法。[hitimes require error when running jekyll serve on windows 8.1](http://stackoverflow.com/questions/28985481/hitimes-require-error-when-running-jekyll-serve-on-windows-8-1) 虽然上面的题主问的是 win 8.1 系统下的情况，但是同样适用于 win7。下面我简单翻译一下错误原因和解决方法。
-
-> 可能是 Ruby 2.2 和 hitimes-1.2.2-x86-mingw32 中有一些 ABI 变化，少了一些相关的类库。
-> 
-> 所以卸载 hitimes 并通过 `--platform ruby` 重装即可。代码如下：
->
-><pre><code class="markdown">gem uni hitimes
-**Remove ALL versions**
-gem ins hitimes -v 1.2.1 --platform ruby
-</code></pre>
-> 然后将自动重新编译 hitimes 并适用于 Ruby 2.2
-
-下面是我自己的卸载和安装过程：
-
-<pre><code class="markdown">E:\GitWorkSpace\gaohaoyang.github.io>gem uni hitimes
-
-You have requested to uninstall the gem:
-        hitimes-1.2.2-x86-mingw32
-
-timers-4.0.1 depends on hitimes (>= 0)
-If you remove this gem, these dependencies will not be met.
-Continue with Uninstall? [yN]  y
-Successfully uninstalled hitimes-1.2.2-x86-mingw32
-
-E:\GitWorkSpace\gaohaoyang.github.io>gem ins hitimes -v 1.2.1 --platform ruby
-Fetching: hitimes-1.2.1.gem (100%)
-Temporarily enhancing PATH to include DevKit...
-Building native extensions.  This could take a while...
-Successfully installed hitimes-1.2.1
-Parsing documentation for hitimes-1.2.1
-Installing ri documentation for hitimes-1.2.1
-Done installing documentation for hitimes after 1 seconds
-1 gem installed</code></pre>
+如今写文章当然用markdown啦，参考教程：[markdown](http://www.appinn.com/markdown/)
 
 
-关于，[hitimes](https://rubygems.org/gems/hitimes/versions/1.2.2) 是一个快速的高效的定时器解决方案库，详情可以去官网查看。
+#### 图床
+
+我用了七牛，体验用户的存储空间免费额度是1G、标准用户的存储空间免费额度是10G，对我们足够啦：[biubiubiu](http://www.qiniu.com/)
 
 
+#### 绑定域名
+
+拥有自己的域名才显得<del>装逼</del>高！大！上！嘛····于是博主决定去[godaddy](http://www.godaddy.com/)买一个，得知[腾讯云]给学生发优惠券的,遂免费领取了一个。
+然而····好吧我买了.cn后缀的····要有很麻烦的备案才能用···所以咋还是破点小钱拥抱.com吧。
+绑定的过程很简单，这篇百度经验告诉了你。[github博客绑定域名](http://jingyan.baidu.com/article/36d6ed1f5356f31bcf488314.html)
+
+---
+
+## 注意事项
+
+*  前端发展速度太快，许多好教程到现在容易变成坑，建议多找些时间较近的教程看。
+*  jekyll中的css是用sass写的，也可以直接用css写没问题的。[sass英文文档](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) || [sass中文入门](http://www.w3cplus.com/sassguide/)
+*  博客默认是没有评论系统的，本文的评论系统使用了多说，详细安装办法可访问[多说官网](http://duoshuo.com/)。
+
+---
+##### 第一篇博文，没啥干货=.= 算是对自己建立博客过程的一个记录或者留念吧，谨作为一条道路的开始······
